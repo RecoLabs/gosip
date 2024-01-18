@@ -9,8 +9,8 @@ import (
 
 	"context"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/csom"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/csom"
 )
 
 // Taxonomy session struct

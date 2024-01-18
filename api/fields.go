@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/koltyakov/gosip"
+	"github.com/recolabs/gosip"
 )
 
 //go:generate ggen -ent Fields -item Field -conf -coll -mods Select,Expand,Filter,Top,OrderBy -helpers Data,Normalized
@@ -57,7 +57,7 @@ func (fields *Fields) Add(ctx context.Context, body []byte) (FieldResp, error) {
 // CreateFieldAsXML creates a field using XML schema definition
 // `options` parameter (https://github.com/pnp/pnpjs/blob/version-2/packages/sp/fields/types.ts#L553)
 // is only relevant for adding fields in list instances
-func (fields *Fields) CreateFieldAsXML(ctx context.Context,  schemaXML string, options int) (FieldResp, error) {
+func (fields *Fields) CreateFieldAsXML(ctx context.Context, schemaXML string, options int) (FieldResp, error) {
 	endpoint := fmt.Sprintf("%s/CreateFieldAsXml", fields.endpoint)
 	info := map[string]map[string]interface{}{
 		"parameters": {

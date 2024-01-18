@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/koltyakov/gosip"
+	"github.com/recolabs/gosip"
 )
 
 // AuthCnfg - anonymous config structure

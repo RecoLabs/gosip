@@ -5,7 +5,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/koltyakov/gosip/csom"
+	"github.com/recolabs/gosip/csom"
 )
 
 func TestCsomRequest(t *testing.T) {

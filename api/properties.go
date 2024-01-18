@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/csom"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/csom"
 )
 
 //go:generate ggen -ent Properties -conf -coll -mods Select,Expand

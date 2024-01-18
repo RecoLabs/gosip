@@ -7,8 +7,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/csom"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/csom"
 )
 
 //go:generate ggen -ent FieldLinks -item FieldLink -conf -coll -mods Select,Filter,Top -helpers Data,Normalized

@@ -16,8 +16,8 @@ import (
 
 	"github.com/Azure/go-autorest/autorest/adal"
 	"github.com/Azure/go-autorest/autorest/azure/auth"
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/cpass"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/cpass"
 )
 
 var (

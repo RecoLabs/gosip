@@ -19,8 +19,8 @@ import (
 
 	"github.com/Azure/go-ntlmssp"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/cpass"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/cpass"
 )
 
 // AuthCnfg - NTLM auth config structure

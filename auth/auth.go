@@ -6,16 +6,16 @@ import (
 	"io"
 	"os"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/auth/addin"
-	"github.com/koltyakov/gosip/auth/adfs"
-	"github.com/koltyakov/gosip/auth/azurecert"
-	"github.com/koltyakov/gosip/auth/azurecreds"
-	"github.com/koltyakov/gosip/auth/device"
-	"github.com/koltyakov/gosip/auth/fba"
-	"github.com/koltyakov/gosip/auth/ntlm"
-	"github.com/koltyakov/gosip/auth/saml"
-	"github.com/koltyakov/gosip/auth/tmg"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/auth/addin"
+	"github.com/recolabs/gosip/auth/adfs"
+	"github.com/recolabs/gosip/auth/azurecert"
+	"github.com/recolabs/gosip/auth/azurecreds"
+	"github.com/recolabs/gosip/auth/device"
+	"github.com/recolabs/gosip/auth/fba"
+	"github.com/recolabs/gosip/auth/ntlm"
+	"github.com/recolabs/gosip/auth/saml"
+	"github.com/recolabs/gosip/auth/tmg"
 )
 
 // NewAuthByStrategy resolves AuthCnfg object based on strategy name

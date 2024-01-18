@@ -28,8 +28,8 @@ import (
 
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/azure/auth"
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/cpass"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/cpass"
 )
 
 // AuthCnfg - AAD Environment-Based Auth Flow

@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/koltyakov/gosip"
+	"github.com/recolabs/gosip"
 )
 
 //go:generate ggen -ent Subscriptions -item Subscription -conf -coll

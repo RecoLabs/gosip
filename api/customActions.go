@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/koltyakov/gosip"
+	"github.com/recolabs/gosip"
 )
 
 //go:generate ggen -ent CustomActions -conf -coll -mods Select,Filter,Top,OrderBy

@@ -60,9 +60,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/api"
-	strategy "github.com/koltyakov/gosip-sandbox/strategies/azureenv"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/api"
+	strategy "github.com/recolabs/gosip-sandbox/strategies/azureenv"
 )
 
 func main() {

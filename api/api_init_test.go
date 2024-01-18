@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/auth/ntlm"
-	"github.com/koltyakov/gosip/auth/saml"
-	h "github.com/koltyakov/gosip/test/helpers"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/auth/ntlm"
+	"github.com/recolabs/gosip/auth/saml"
+	h "github.com/recolabs/gosip/test/helpers"
 )
 
 var (

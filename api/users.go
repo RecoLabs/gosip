@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/koltyakov/gosip"
+	"github.com/recolabs/gosip"
 )
 
 //go:generate ggen -ent Users -item User -conf -coll -mods Select,Expand,Filter,Top,OrderBy -helpers Data,Normalized

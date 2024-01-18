@@ -5,7 +5,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/koltyakov/gosip"
+	"github.com/recolabs/gosip"
 )
 
 //go:generate ggen -ent ContentType -conf -mods Select,Expand -helpers Data,Normalized

@@ -1,4 +1,4 @@
-module github.com/koltyakov/gosip
+module github.com/recolabs/gosip
 
 go 1.19
 
@@ -25,4 +25,4 @@ require (
 	golang.org/x/sys v0.15.0 // indirect
 )
 
-// replace github.com/koltyakov/gosip => ./
+// replace github.com/recolabs/gosip => ./

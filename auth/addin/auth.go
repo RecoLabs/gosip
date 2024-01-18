@@ -15,8 +15,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/cpass"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/cpass"
 )
 
 // AuthCnfg - AddIn Only auth config structure

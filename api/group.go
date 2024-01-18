@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net/url"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/csom"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/csom"
 )
 
 //go:generate ggen -ent Group -conf -mods Select,Expand -helpers Data,Normalized

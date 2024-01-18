@@ -15,7 +15,7 @@ import (
 
 	"github.com/patrickmn/go-cache"
 
-	"github.com/koltyakov/gosip/templates"
+	"github.com/recolabs/gosip/templates"
 )
 
 var (

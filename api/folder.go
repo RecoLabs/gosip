@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/koltyakov/gosip"
+	"github.com/recolabs/gosip"
 )
 
 //go:generate ggen -ent Folder -conf -mods Select,Expand -helpers Data,Normalized

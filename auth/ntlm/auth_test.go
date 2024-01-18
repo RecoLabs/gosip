@@ -5,8 +5,8 @@ import (
 	"os"
 	"testing"
 
-	h "github.com/koltyakov/gosip/test/helpers"
-	u "github.com/koltyakov/gosip/test/utils"
+	h "github.com/recolabs/gosip/test/helpers"
+	u "github.com/recolabs/gosip/test/utils"
 )
 
 var (

@@ -9,8 +9,8 @@ import (
 	_ "net/http/pprof"
 	"time"
 
-	"github.com/koltyakov/gosip/api"
-	m "github.com/koltyakov/gosip/test/manual"
+	"github.com/recolabs/gosip/api"
+	m "github.com/recolabs/gosip/test/manual"
 )
 
 func main() {

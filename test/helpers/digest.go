@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/koltyakov/gosip"
-	u "github.com/koltyakov/gosip/test/utils"
+	"github.com/recolabs/gosip"
+	u "github.com/recolabs/gosip/test/utils"
 )
 
 // CheckDigest : check getting form digest

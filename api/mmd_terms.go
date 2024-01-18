@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/koltyakov/gosip/csom"
+	"github.com/recolabs/gosip/csom"
 )
 
 // Terms struct

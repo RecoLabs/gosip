@@ -3,9 +3,9 @@
 > Authentication, HTTP client & fluent API wrapper
 
 ![Build Status](https://koltyakov.visualstudio.com/SPNode/_apis/build/status/gosip?branchName=master)
-[![Go Report Card](https://goreportcard.com/badge/github.com/koltyakov/gosip)](https://goreportcard.com/report/github.com/koltyakov/gosip)
-[![GoDoc](https://godoc.org/github.com/koltyakov/gosip?status.svg)](https://godoc.org/github.com/koltyakov/gosip)
-[![License](https://img.shields.io/github/license/koltyakov/gosip.svg)](https://github.com/koltyakov/gosip/blob/master/LICENSE)
+[![Go Report Card](https://goreportcard.com/badge/github.com/recolabs/gosip)](https://goreportcard.com/report/github.com/recolabs/gosip)
+[![GoDoc](https://godoc.org/github.com/recolabs/gosip?status.svg)](https://godoc.org/github.com/recolabs/gosip)
+[![License](https://img.shields.io/github/license/koltyakov/gosip.svg)](https://github.com/recolabs/gosip/blob/master/LICENSE)
 [![codecov](https://codecov.io/gh/koltyakov/gosip/branch/master/graph/badge.svg)](https://codecov.io/gh/koltyakov/gosip)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkoltyakov%2Fgosip.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkoltyakov%2Fgosip?ref=badge_shield)
 [![Mentioned in Awesome Go](https://awesome.re/mentioned-badge.svg)](https://github.com/avelino/awesome-go)
@@ -37,34 +37,34 @@
   - SAML based with user credentials
   - Add-In only permissions
   - ADFS user credentials (automatically detects in SAML strategy)
-  - On-Demand auth [🔗](https://github.com/koltyakov/gosip-sandbox/tree/master/strategies/ondemand)
+  - On-Demand auth [🔗](https://github.com/recolabs/gosip-sandbox/tree/master/strategies/ondemand)
 
 - SharePoint On-Premises 2019/2016/2013:
   - User credentials (NTLM)
   - ADFS user credentials (ADFS, WAP -> Basic/NTLM, WAP -> ADFS)
   - Behind a reverse proxy (Forefront TMG, WAP -> Basic/NTLM, WAP -> ADFS)
   - Form-based authentication (FBA)
-  - On-Demand auth [🔗](https://github.com/koltyakov/gosip-sandbox/tree/master/strategies/ondemand)
+  - On-Demand auth [🔗](https://github.com/recolabs/gosip-sandbox/tree/master/strategies/ondemand)
 
 ## Installation
 
 ```bash
-go get github.com/koltyakov/gosip
+go get github.com/recolabs/gosip
 ```
 
 ## Usage insights
 
 1\. Understand SharePoint environment type and authentication strategy.
 
-Let's assume it's SharePoint Online and Add-In Only permissions. Then `strategy "github.com/koltyakov/gosip/auth/addin"` subpackage should be used.
+Let's assume it's SharePoint Online and Add-In Only permissions. Then `strategy "github.com/recolabs/gosip/auth/addin"` subpackage should be used.
 
 ```golang
 package main
 
 import (
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/api"
-	strategy "github.com/koltyakov/gosip/auth/addin"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/api"
+	strategy "github.com/recolabs/gosip/auth/addin"
 )
 ```
 
@@ -124,9 +124,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/api"
-	strategy "github.com/koltyakov/gosip/auth/addin"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/api"
+	strategy "github.com/recolabs/gosip/auth/addin"
 )
 
 func main() {
@@ -191,9 +191,9 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/koltyakov/gosip"
-	"github.com/koltyakov/gosip/api"
-	strategy "github.com/koltyakov/gosip/auth/ntlm"
+	"github.com/recolabs/gosip"
+	"github.com/recolabs/gosip/api"
+	strategy "github.com/recolabs/gosip/auth/ntlm"
 )
 
 func main() {
@@ -224,7 +224,7 @@ func main() {
 
 ### Low-level HTTP client usage
 
-Low-lever SharePoint-aware HTTP client from `github.com/koltyakov/gosip` package for custom or not covered with a Fluent API client endpoints with granular control for an HTTP request, response, and http.Client parameters. The client is used internally but rarely required in consumer code.
+Low-lever SharePoint-aware HTTP client from `github.com/recolabs/gosip` package for custom or not covered with a Fluent API client endpoints with granular control for an HTTP request, response, and http.Client parameters. The client is used internally but rarely required in consumer code.
 
 ```golang
 client := &gosip.SPClient{AuthCnfg: auth}
@@ -246,7 +246,7 @@ SPClient has `Execute` method which is a wrapper function injecting SharePoint a
 
 Auth strategy should be selected corresponding to your SharePoint environment and its configuration.
 
-Import path `strategy "github.com/koltyakov/gosip/auth/{strategy}"`. Where `/{strategy}` stands for a strategy auth package.
+Import path `strategy "github.com/recolabs/gosip/auth/{strategy}"`. Where `/{strategy}` stands for a strategy auth package.
 
 Azure AD based strategies (recommended production use with SharePoint Online):
 
@@ -336,7 +336,7 @@ type AuthCnfg struct {
 }
 ```
 
-Gosip uses `github.com/Azure/go-ntlmssp` NTLM negotiator, however, a custom one also can be [provided](https://github.com/koltyakov/gosip/issues/14) in case of demand.
+Gosip uses `github.com/Azure/go-ntlmssp` NTLM negotiator, however, a custom one also can be [provided](https://github.com/recolabs/gosip/issues/14) in case of demand.
 
 ## Secrets encoding
 
@@ -350,7 +350,7 @@ Fluent API and wrapper syntax are inspired by [PnPjs](https://github.com/pnp/pnp
 
 ## 📚 [Documentation](https://go.spflow.com)
 
-## 📦 [Samples](https://github.com/koltyakov/gosip-sandbox/tree/master/samples)
+## 📦 [Samples](https://github.com/recolabs/gosip-sandbox/tree/master/samples)
 
 ## License
 
